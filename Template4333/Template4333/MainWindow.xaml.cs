@@ -30,5 +30,12 @@ namespace Template4333
             _4333_Kulikova win = new _4333_Kulikova();  
             win.Show();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+           
+            Chekina1 chekina = new Chekina1();
+            chekina.Show();
+        }
     }
 }
