@@ -38,6 +38,10 @@
             <RowDefinition Height="*"></RowDefinition>
 
         </Grid.RowDefinitions>
+        <Button Grid.Row="18" HorizontalAlignment="Center" Content="Показать" Click="Button_Click_1" Grid.RowSpan="2" Margin="0,0,0,29"/>
+
+
         <Button Grid.Row="14" HorizontalAlignment="Center" Content="Показать информацию" Click="Button_Click"/>
     </Grid>
+
 </Window>
