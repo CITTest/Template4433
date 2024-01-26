@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Template4333"
         mc:Ignorable="d"
-      Title="MainWindow" Height="800" Width="400" MinHeight="800" MinWidth="400">
+        Title="MainWindow" Height="800" Width="400" MinHeight="800" MinWidth="400">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
@@ -33,11 +33,16 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
+        <!-- Элементы в предыдущих строках -->
+
+        <!-- Кнопка по центру -->
+        <Button Content="Кнопка по центру" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click"/>
     </Grid>
 </Window>
