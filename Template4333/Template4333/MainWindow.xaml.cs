@@ -30,5 +30,10 @@ namespace Template4333
             _4333_Kulikova win = new _4333_Kulikova();  
             win.Show();
         }
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            Gilfanov4333 win = new Gilfanov4333();
+            win.Show();
+        }
     }
 }
