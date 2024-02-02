@@ -16,3 +16,22 @@ C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debu
 C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333.pdb
 C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debug\4333_Kulikova.g.cs
 C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debug\4333_Kulikova.baml
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\bin\Debug\Template4333.exe.config
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\bin\Debug\Template4333.exe
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\bin\Debug\Template4333.pdb
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.AssemblyReference.cache
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\4333_KhokhlovAlexey.g.cs
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\4333_Kulikova.g.cs
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\MainWindow.g.cs
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\App.g.cs
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\Template4333_MarkupCompile.cache
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\Template4333_MarkupCompile.lref
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\4333_Kulikova.baml
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\MainWindow.baml
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\4333_KhokhlovAlexey.baml
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\Template4333.g.resources
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\Template4333.Properties.Resources.resources
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.GenerateResource.cache
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.CoreCompileInputs.cache
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\Template4333.exe
+C:\Users\Alexey\Desktop\Новая папка\Template4333\Template4333\Template4333\obj\Debug\Template4333.pdb
