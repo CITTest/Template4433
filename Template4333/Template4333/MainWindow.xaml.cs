@@ -30,5 +30,11 @@ namespace Template4333
             _4333_Kulikova win = new _4333_Kulikova();  
             win.Show();
         }
+
+        private void Blagodarov_Click(object sender, RoutedEventArgs e)
+        {
+            _4333_Blagodarov compl = new _4333_Blagodarov();
+            compl.Show();
+        }
     }
 }
