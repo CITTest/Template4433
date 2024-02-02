@@ -16,3 +16,22 @@ C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debu
 C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333.pdb
 C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debug\4333_Kulikova.g.cs
 C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debug\4333_Kulikova.baml
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\bin\Debug\Template4333.exe.config
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\bin\Debug\Template4333.exe
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\bin\Debug\Template4333.pdb
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\4333_Kahraman.g.cs
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\4333_Kulikova.g.cs
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\App.g.cs
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333_MarkupCompile.cache
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333_MarkupCompile.lref
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\4333_Kulikova.baml
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\4333_Kahraman.baml
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333.g.resources
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333.Properties.Resources.resources
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333.exe
+C:\Users\user\Desktop\Лаба по ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333.pdb

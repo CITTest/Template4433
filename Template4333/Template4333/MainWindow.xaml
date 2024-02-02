@@ -38,6 +38,7 @@
             <RowDefinition Height="*"></RowDefinition>
 
         </Grid.RowDefinitions>
+        <Button Grid.Row="12" HorizontalAlignment="Center" Content="Показать информацию" Click="Kahraman_Click"/>
         <Button Grid.Row="14" HorizontalAlignment="Center" Content="Показать информацию" Click="Button_Click"/>
     </Grid>
 </Window>

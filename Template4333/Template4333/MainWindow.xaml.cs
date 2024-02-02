@@ -30,5 +30,11 @@ namespace Template4333
             _4333_Kulikova win = new _4333_Kulikova();  
             win.Show();
         }
+
+        private void Kahraman_Click(object sender, RoutedEventArgs e)
+        {
+            _4333_Kahraman kahraman = new _4333_Kahraman();
+            kahraman.Show();
+        }
     }
 }
