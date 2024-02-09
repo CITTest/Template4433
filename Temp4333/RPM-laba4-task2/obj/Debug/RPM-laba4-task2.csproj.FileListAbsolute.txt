@@ -1,0 +1,16 @@
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\bin\Debug\RPM-laba4-task2.exe.config
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\bin\Debug\RPM-laba4-task2.exe
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\bin\Debug\RPM-laba4-task2.pdb
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\RPM-laba4-task2.csproj.AssemblyReference.cache
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\RPM-laba4-task2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\MainWindow.g.cs
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\App.g.cs
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\RPM-laba4-task2_MarkupCompile.cache
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\RPM-laba4-task2_MarkupCompile.lref
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\MainWindow.baml
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\RPM-laba4-task2.g.resources
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\RPM_laba4_task2.Properties.Resources.resources
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\RPM-laba4-task2.csproj.GenerateResource.cache
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\RPM-laba4-task2.csproj.CoreCompileInputs.cache
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\RPM-laba4-task2.exe
+C:\Users\Ратмир\source\repos\RPM-laba4-task2\RPM-laba4-task2\obj\Debug\RPM-laba4-task2.pdb
