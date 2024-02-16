@@ -27,8 +27,10 @@ namespace Template4333
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _4333_Kulikova win = new _4333_Kulikova();  
-            win.Show();
+
+
+            Minigaliev_4333 minigaliev_4333 = new Minigaliev_4333();
+            minigaliev_4333.ShowDialog();
         }
     }
 }

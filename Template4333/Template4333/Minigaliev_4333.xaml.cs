@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Template4333
 {
     /// <summary>
-    /// Логика взаимодействия для _4333_Kulikova.xaml
+    /// Логика взаимодействия для Minigaliev_4333.xaml
     /// </summary>
-    public partial class _4333_Kulikova : Window
+    public partial class Minigaliev_4333 : Window
     {
-        public _4333_Kulikova()
+        public Minigaliev_4333()
         {
             InitializeComponent();
         }
