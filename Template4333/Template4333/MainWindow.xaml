@@ -38,7 +38,10 @@
             <RowDefinition Height="*"></RowDefinition>
 
         </Grid.RowDefinitions>
+        
+        <GroupBox Header="Blagodarov" Grid.Row="3"/>
         <Button Grid.Row="3" HorizontalAlignment="Center" Content="Показать информацию" Click="Blagodarov_Click"/>
+
         <Button Grid.Row="14" HorizontalAlignment="Center" Content="Показать информацию" Click="Button_Click"/>
     </Grid>
 </Window>

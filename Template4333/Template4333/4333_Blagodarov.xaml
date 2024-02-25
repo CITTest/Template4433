@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Template4333"
         mc:Ignorable="d"
-        Title="_4333_Blagodarov" Height="55" Width="155">
+        Title="_4333_Blagodarov" Height="233" Width="412">
     <Grid>
         <Label Content="Демид, 19 лет" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top"/>
+        <Button Content="Import" HorizontalAlignment="Left" Margin="44,61,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Export" HorizontalAlignment="Left" Margin="129,61,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <DataGrid x:Name="Data" Margin="10,86,10,15" Width="206" HorizontalAlignment="Left" FontSize="5" CanUserAddRows="True" EnableRowVirtualization="True" AutoGenerateColumns="True"/>
     </Grid>
 </Window>

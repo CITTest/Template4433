@@ -35,3 +35,4 @@ C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\obj\Debu
 C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.CoreCompileInputs.cache
 C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\obj\Debug\Template4333.exe
 C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\obj\Debug\Template4333.pdb
+C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.ResolveComReference.cache
