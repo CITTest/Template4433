@@ -36,3 +36,6 @@ C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\obj\Debu
 C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\obj\Debug\Template4333.exe
 C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\obj\Debug\Template4333.pdb
 C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.ResolveComReference.cache
+C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\bin\Debug\Newtonsoft.Json.dll
+C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\bin\Debug\Newtonsoft.Json.xml
+C:\Users\MSII\Downloads\LabISRPO\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.CopyComplete

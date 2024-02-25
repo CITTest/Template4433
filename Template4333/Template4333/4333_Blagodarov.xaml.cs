@@ -16,6 +16,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Excel = Microsoft.Office.Interop.Excel;
+using Word = Microsoft.Office.Interop.Word;
+using Newtonsoft.Json;
 
 namespace Template4333
 {
@@ -30,7 +32,9 @@ namespace Template4333
         }
 
         int NumberOfDateRow;
+        int[] columns = new int[]{1,2,5,6}; //Нумерация нужный колонок для вывода по категориям
         DataTable table = new DataTable();
+        DataTable table2 = new DataTable();
 
         public class StringManipulation
         {
@@ -207,17 +211,14 @@ namespace Template4333
 
             if (saveFileDialog.ShowDialog() == true)
             {
-                // Создание нового Excel пакета
-                //Excel.Workbook wb = new Excel.Workbook();
+                // Создание файла Excel
                 Excel.Application excelApp = new Excel.Application();
+                Excel.Workbook excelWorkbook = excelApp.Workbooks.Add();
+                Excel.Worksheet excelWorksheet = excelWorkbook.ActiveSheet;
 
                 // Отключаем отображение Excel во время создания
                 excelApp.Visible = false;
                 excelApp.DisplayAlerts = false;
-
-                // Создаем новую книгу Excel
-                Excel.Workbook excelWorkbook = excelApp.Workbooks.Add();
-                Excel.Worksheet excelWorksheet = excelWorkbook.ActiveSheet;
 
                 foreach (DataTable dataTable in dataSet.Tables)
                 {
@@ -227,17 +228,29 @@ namespace Template4333
                     excelWorksheet.Columns.ColumnWidth = 20;
 
                     // Запись заголовков (названий столбцов DataTable) в первую строку
+                    int countColumn = 1;
                     for (int i = 1; i <= dataTable.Columns.Count; i++)
                     {
-                        excelWorksheet.Cells[1, i].Value = dataTable.Columns[i - 1].ColumnName;
+                        if (columns.Contains(i))
+                        {
+                            excelWorksheet.Cells[1, countColumn].Value = dataTable.Columns[i - 1].ColumnName;
+                            countColumn++;
+                        }
+                        //excelWorksheet.Cells[1, i].Value = dataTable.Columns[i - 1].ColumnName; // Сохранение всех колонок
                     }
 
                     // Запись данных строк DataTable в Excel
                     for (int r = 0; r < dataTable.Rows.Count; r++)
                     {
+                        int countRow = 1;
                         for (int c = 0; c < dataTable.Columns.Count; c++)
                         {
-                            excelWorksheet.Cells[r + 2, c + 1].Value = dataTable.Rows[r][c];
+                            if (columns.Contains(c))
+                            {
+                                excelWorksheet.Cells[r + 2, countRow].Value = dataTable.Rows[r][c - 1];
+                                countRow++;
+                            }
+                            //excelWorksheet.Cells[r + 2, c + 1].Value = dataTable.Rows[r][c]; // Сохранение всех данных
                         }
                     }
                 }
@@ -254,6 +267,165 @@ namespace Template4333
             }
         }
 
+        public void ImportDataFromJSON(string filePath)
+        {
+            if (filePath == null)
+            {
+                return;
+            }
+
+            table2.Columns.Clear();
+            table2.Rows.Clear();
+
+            // Чтение данных из файла JSON
+            string jsonData = File.ReadAllText(filePath);
+
+            // Десериализация JSON в объект DataTable
+            table2 = JsonConvert.DeserializeObject<DataTable>(jsonData);
+
+            Data2.ItemsSource = table2.DefaultView;
+        }
+
+        public void ExportDataFromJSONtoWord(DataTable table, SaveFileDialog saveFileDialog)
+        {
+            if (table == null)
+            {
+                return;
+            }
+
+            DataSet dataSet = new DataSet();
+            dataSet.Clear();
+            
+            int tablesNumber = 0;
+
+            // Цикл для хранения уникальных дат в исходной таблице
+            HashSet<DateTime> uniqueDates = new HashSet<DateTime>();
+
+            // Получение уникальных дат
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                DataRow row1 = table.Rows[i];
+
+                for (int j = 0; j < table.Columns.Count; j++)
+                {
+                    string rowString = row1[j].ToString();
+                    if (row1[j] != null && row1[j].ToString() != "")
+                    {
+                        if (DateTime.TryParse(Convert.ToString(row1[j]), out DateTime dateValue) && rowString.Contains(".")) // Пытаемся преобразовать строку в DateTime
+                        {
+                            DateTime date = Convert.ToDateTime(dateValue);
+                            NumberOfDateRow = j + 1;
+                            uniqueDates.Add(date);
+                        }
+                    }
+                    else { continue; }
+                }
+            }
+
+            // Создание новых DataTable для каждой уникальной даты
+            foreach (DateTime date in uniqueDates)
+            {
+                DataTable newTable = new DataTable();
+                // newTable.TableName = "DataForDate_" + date.ToString("yyyyMMdd");
+                newTable.TableName = "DataForDate_" + date.ToString();
+
+                // Копирование структуры исходной таблицы в новую
+                foreach (DataColumn col in table.Columns)
+                {
+                    newTable.Columns.Add(col.ColumnName, col.DataType);
+                }
+
+                // Добавление строк только с искомой датой
+                foreach (DataRow row in table.Rows)
+                {
+                    if (row[NumberOfDateRow - 1] != null && row[NumberOfDateRow - 1].ToString() != "")
+                    {
+                        if (Convert.ToDateTime(row[NumberOfDateRow - 1]).Date == date.Date)
+                        {
+                            newTable.ImportRow(row);
+                        }
+                    }
+                    else { continue; }
+                }
+
+                // Добавление новой таблицы в DataSet
+                tablesNumber++;
+                dataSet.Tables.Add(newTable);
+            }
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                // Создание файла Word
+                Word.Application wordApp = new Word.Application();
+                Word.Document document = wordApp.Documents.Add();
+
+                // Отключаем отображение Word во время создания
+                wordApp.Visible = false;
+
+                foreach (DataTable dataTable in dataSet.Tables)
+                {
+                    if (dataTable != null && dataTable.Rows.Count > 0)
+                    {
+                        // Сохраняем текущий диапазон
+                        Word.Range currentRange = wordApp.Selection.Range;
+
+                        // Добавление новой страницы
+                        wordApp.Selection.InsertNewPage();
+
+                        Word.Table wordTable = document.Tables.Add(Range: currentRange, 1, dataTable.Columns.Count); 
+
+                        // Устанавливаем стиль отображения сетки между всеми ячейками
+                        wordTable.Borders.Enable = 1;
+
+                        /*// Добавление колонок из DataTable (Для сохранения всех данных)
+                        foreach (DataColumn column in dataTable.Columns)
+                        {
+                            wordTable.Cell(1, column.Ordinal + 1).Range.Text = column.ColumnName;
+                        }*/
+                        int countColumn = 1;
+                        for (int i = 1; i <= dataTable.Columns.Count; i++)
+                        {
+                            if (columns.Contains(i))
+                            {
+                                wordTable.Cell(1, countColumn).Range.Text = dataTable.Columns[i - 1].ColumnName;
+                                countColumn++;
+                            }
+                        }
+
+                        // Добавление данных из DataTable 
+                        foreach (DataRow row in dataTable.Rows)
+                        {
+                            Word.Row newRow = wordTable.Rows.Add();
+                            /*foreach (DataColumn column in dataTable.Columns) // Cохранение всех данных
+                            {
+                                newRow.Cells[column.Ordinal + 1].Range.Text = row[column].ToString();
+                            }*/
+                            int countRow = 1;
+                            for (int i = 1; i <= dataTable.Columns.Count; i++)
+                            {
+                                if (columns.Contains(i))
+                                {
+                                    string r = row[i - 1].ToString();
+                                    newRow.Cells[countRow].Range.Text = row[i - 1].ToString();
+                                    countRow++;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Сохранение Excel файла по выбранному пути
+                FileInfo wordFile = new FileInfo(saveFileDialog.FileName);
+                document.SaveAs(wordFile.FullName);
+
+                MessageBox.Show("Файл был успешно сохранен", "Successfully", MessageBoxButton.OK);
+
+                // Закрываем документ и завершаем процесс Word
+                document.Close();
+                wordApp.Quit();
+            }
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ImportDataFromExcel("C:\\Users\\MSII\\OneDrive\\Рабочий стол\\КИТ\\Инструментальные средства разработки программного обеспечения\\Лабораторная работа №3\\2.xlsx");
@@ -267,6 +439,23 @@ namespace Template4333
             saveFileDialog.FileName = "ExcelFileWithCategories.xlsx";
 
             ExportDataFromExcel(table, saveFileDialog);
+
+            this.Close();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ImportDataFromJSON("C:\\Users\\MSII\\OneDrive\\Рабочий стол\\КИТ\\Инструментальные средства разработки программного обеспечения\\Лабораторная работа №4\\2.json");
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            // Выбор места сохранения и названия Excel файла
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "docx files (*.docx)|*.docx|All files (*.*)|*.*";
+            saveFileDialog.FileName = "WordFileWithCategories.docx";
+
+            ExportDataFromJSONtoWord(table2 , saveFileDialog);
 
             this.Close();
         }

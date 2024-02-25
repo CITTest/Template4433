@@ -5,11 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Template4333"
         mc:Ignorable="d"
-        Title="_4333_Blagodarov" Height="233" Width="412">
+        Title="_4333_Blagodarov" Height="233" Width="460">
     <Grid>
         <Label Content="Демид, 19 лет" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top"/>
+        
         <Button Content="Import" HorizontalAlignment="Left" Margin="44,61,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         <Button Content="Export" HorizontalAlignment="Left" Margin="129,61,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
         <DataGrid x:Name="Data" Margin="10,86,10,15" Width="206" HorizontalAlignment="Left" FontSize="5" CanUserAddRows="True" EnableRowVirtualization="True" AutoGenerateColumns="True"/>
+        <GroupBox Header="Excel" Width="225" Margin="0,41,225,0"/>
+
+        <Button Content="Import" HorizontalAlignment="Right" Margin="0,61,129,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+        <Button Content="Export" HorizontalAlignment="Right" Margin="0,61,44,0" VerticalAlignment="Top" Click="Button_Click_3"/>
+        <DataGrid x:Name="Data2" Margin="10,86,10,15" Width="206" HorizontalAlignment="Right" FontSize="5" CanUserAddRows="True" EnableRowVirtualization="True" AutoGenerateColumns="True"/>
+        <GroupBox Header="JSON" Width="225" HorizontalAlignment="Right" Margin="0,41,0,0"/>
     </Grid>
 </Window>
