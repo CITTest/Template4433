@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище laba33ModelContainer" CdmEntityContainer="laba33Entities4">
+    <EntitySetMapping Name="laba3isr">
+      <EntityTypeMapping TypeName="laba33Model.laba3isr">
+        <MappingFragment StoreEntitySet="laba3isr">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="kod_zakaza" ColumnName="kod_zakaza" />
+          <ScalarProperty Name="Data_sozdania" ColumnName="Data_sozdania" />
+          <ScalarProperty Name="Vremya_zakaza" ColumnName="Vremya_zakaza" />
+          <ScalarProperty Name="kod_klienta" ColumnName="kod_klienta" />
+          <ScalarProperty Name="uslugi" ColumnName="uslugi" />
+          <ScalarProperty Name="statuz" ColumnName="statuz" />
+          <ScalarProperty Name="data_zakritia" ColumnName="data_zakritia" />
+          <ScalarProperty Name="vremya_prokata" ColumnName="vremya_prokata" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

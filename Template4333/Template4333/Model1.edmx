@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище laba33Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="laba3isr">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kod_zakaza" Type="nvarchar" MaxLength="200" />
+          <Property Name="Data_sozdania" Type="nvarchar" MaxLength="200" />
+          <Property Name="Vremya_zakaza" Type="nvarchar" MaxLength="200" />
+          <Property Name="kod_klienta" Type="nvarchar" MaxLength="200" />
+          <Property Name="uslugi" Type="nvarchar" MaxLength="200" />
+          <Property Name="statuz" Type="nvarchar" MaxLength="200" />
+          <Property Name="data_zakritia" Type="nvarchar" MaxLength="200" />
+          <Property Name="vremya_prokata" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityContainer Name="Хранилище laba33ModelContainer">
+          <EntitySet Name="laba3isr" EntityType="Self.laba3isr" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="laba33Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="laba3isr">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kod_zakaza" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Data_sozdania" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Vremya_zakaza" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="kod_klienta" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="uslugi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="statuz" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="data_zakritia" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="vremya_prokata" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="laba33Entities4" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="laba3isr" EntityType="Self.laba3isr" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище laba33ModelContainer" CdmEntityContainer="laba33Entities4">
+          <EntitySetMapping Name="laba3isr">
+            <EntityTypeMapping TypeName="laba33Model.laba3isr">
+              <MappingFragment StoreEntitySet="laba3isr">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="kod_zakaza" ColumnName="kod_zakaza" />
+                <ScalarProperty Name="Data_sozdania" ColumnName="Data_sozdania" />
+                <ScalarProperty Name="Vremya_zakaza" ColumnName="Vremya_zakaza" />
+                <ScalarProperty Name="kod_klienta" ColumnName="kod_klienta" />
+                <ScalarProperty Name="uslugi" ColumnName="uslugi" />
+                <ScalarProperty Name="statuz" ColumnName="statuz" />
+                <ScalarProperty Name="data_zakritia" ColumnName="data_zakritia" />
+                <ScalarProperty Name="vremya_prokata" ColumnName="vremya_prokata" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

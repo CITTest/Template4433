@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище laba33Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="laba3isr">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kod_zakaza" Type="nvarchar" MaxLength="200" />
+    <Property Name="Data_sozdania" Type="nvarchar" MaxLength="200" />
+    <Property Name="Vremya_zakaza" Type="nvarchar" MaxLength="200" />
+    <Property Name="kod_klienta" Type="nvarchar" MaxLength="200" />
+    <Property Name="uslugi" Type="nvarchar" MaxLength="200" />
+    <Property Name="statuz" Type="nvarchar" MaxLength="200" />
+    <Property Name="data_zakritia" Type="nvarchar" MaxLength="200" />
+    <Property Name="vremya_prokata" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityContainer Name="Хранилище laba33ModelContainer">
+    <EntitySet Name="laba3isr" EntityType="Self.laba3isr" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
