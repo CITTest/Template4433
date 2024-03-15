@@ -27,7 +27,12 @@ namespace Template4333
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             MessageBox.Show("Valiullin Artur 18 godikov");
+=======
+            laba3 win = new laba3();
+            win.Show();
+>>>>>>> badfcfb (ffff)
         }
     }
 }

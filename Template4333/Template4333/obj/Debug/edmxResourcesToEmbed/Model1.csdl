@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="laba33Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="laba3isr">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kod_zakaza" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Data_sozdania" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Vremya_zakaza" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="kod_klienta" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="uslugi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="statuz" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="data_zakritia" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="vremya_prokata" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="laba33Entities4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="laba3isr" EntityType="Self.laba3isr" />
+  </EntityContainer>
+</Schema>
