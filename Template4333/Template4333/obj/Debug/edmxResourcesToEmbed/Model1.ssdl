@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище usersModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Code_order" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Data" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Time" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code_client" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Uslugi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Data_close" Type="nvarchar" MaxLength="50" />
+    <Property Name="Time_prokata" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Хранилище usersModelContainer">
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

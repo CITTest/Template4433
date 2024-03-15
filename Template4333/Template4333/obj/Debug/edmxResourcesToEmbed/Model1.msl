@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище usersModelContainer" CdmEntityContainer="usersEntities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="usersModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Code_order" ColumnName="Code_order" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Code_client" ColumnName="Code_client" />
+          <ScalarProperty Name="Uslugi" ColumnName="Uslugi" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Data_close" ColumnName="Data_close" />
+          <ScalarProperty Name="Time_prokata" ColumnName="Time_prokata" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
