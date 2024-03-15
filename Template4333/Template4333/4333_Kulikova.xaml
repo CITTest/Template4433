@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="_4333_Kulikova" Height="100" Width="200">
     <Grid>
-        <Label Content="Вероника, 18 лет" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top"/>
-
+        <Label Content="Вероника, 18 лет" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Stretch"/>
     </Grid>
 </Window>
