@@ -16,3 +16,34 @@ C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debu
 C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debug\Template4333.pdb
 C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debug\4333_Kulikova.g.cs
 C:\Users\Asus\Desktop\ИСРПО\Template4333\Template4333\Template4333\obj\Debug\4333_Kulikova.baml
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\bin\Debug\Database1.mdf
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\bin\Debug\Database1_log.ldf
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\bin\Debug\Template4333.exe.config
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\bin\Debug\Template4333.exe
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\bin\Debug\Template4333.pdb
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\bin\Debug\EntityFramework.dll
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\bin\Debug\EntityFramework.xml
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template4333.csproj.AssemblyReference.cache
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template4333.csproj.ResolveComReference.cache
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\4333_Emel.g.cs
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\4333_Kulikova.g.cs
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Emel_4333_3lab.g.cs
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\MainWindow.g.cs
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\App.g.cs
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template4333_Content.g.cs
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template4333_MarkupCompile.cache
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template4333_MarkupCompile.lref
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\4333_Emel.baml
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\4333_Kulikova.baml
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Emel_4333_3lab.baml
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\MainWindow.baml
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template4333.g.resources
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template4333.Properties.Resources.resources
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template4333.csproj.GenerateResource.cache
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template4333.csproj.CoreCompileInputs.cache
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template.EADC1948.Up2Date
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template4333.exe
+C:\Users\rozav\Рабочий стол\git\Template4333\Template4333\obj\Debug\Template4333.pdb
