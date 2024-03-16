@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:Template4333"
         mc:Ignorable="d"
         Title="_4333_KhokhlovAlexey" Height="450" Width="800">
+
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" >Алексей, 18 лет</TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="11*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid>
+            <TextBlock HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" >Алексей, 18 лет</TextBlock>
+        </Grid>
+        <UniformGrid Grid.Row="0" Columns="2">
+            <Button x:Name="BnImport" Click="BnImport_Click" Width="150" Height="20" HorizontalAlignment="Left">Импорт данных</Button>
+
+            <Button x:Name="BnExport" Click="BnExport_Click" Width="150" Height="20" HorizontalAlignment="Left" Margin="250,0,0,8" VerticalAlignment="Bottom">Экспорт данных</Button>
+        </UniformGrid>
     </Grid>
+
 </Window>

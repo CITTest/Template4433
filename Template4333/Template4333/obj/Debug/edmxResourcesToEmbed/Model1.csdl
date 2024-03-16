@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ISRPO3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="xls">
+    <Key>
+      <PropertyRef Name="Код_клиента" />
+    </Key>
+    <Property Name="Код_клиента" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Должность" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ФИО" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Логин" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Пароль" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Последний_вход" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Тип_входа" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ISRPO3Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="xls" EntityType="Self.xls" />
+  </EntityContainer>
+</Schema>
