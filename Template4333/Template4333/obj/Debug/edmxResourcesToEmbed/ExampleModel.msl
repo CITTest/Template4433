@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище serviceModelContainer" CdmEntityContainer="serviceEntities">
+    <EntitySetMapping Name="s_ervice">
+      <EntityTypeMapping TypeName="serviceModel.s_ervice">
+        <MappingFragment StoreEntitySet="s_ervice">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name_service" ColumnName="name_service" />
+          <ScalarProperty Name="type_of_service" ColumnName="type_of_service" />
+          <ScalarProperty Name="code_service" ColumnName="code_service" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
