@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="_4333_Borodin" Height="450" Width="800">
     <Grid>
-        <TextBlock>Бородин Егор - возраст: 19</TextBlock>
+        <StackPanel Orientation="Vertical">
+            <TextBlock>Бородин Егор - возраст: 19</TextBlock>
+            <Button Height="100" Width="404" Margin="5" Click="ImportClick">Импорт данных</Button>
+            <Button Height="100" Width="404" Click="ExportClick">Экспорт в Excel</Button>
+        </StackPanel>
     </Grid>
 </Window>
