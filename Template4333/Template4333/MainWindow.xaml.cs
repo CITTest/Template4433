@@ -27,7 +27,7 @@ namespace Template4333
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _4333_Kulikova win = new _4333_Kulikova();  
+            bayazitova4333 win = new bayazitova4333();  
             win.Show();
         }
     }
