@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ISRPO3Model1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ISRPO3JSON">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CodeClient" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDate" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Index" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Street" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Home" Type="Int32" />
+    <Property Name="Kvartira" Type="Int32" />
+    <Property Name="E_mail" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ISRPO3Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ISRPO3JSON" EntityType="Self.ISRPO3JSON" />
+  </EntityContainer>
+</Schema>

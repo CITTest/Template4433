@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ISRPO3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ISRPO3">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FIO" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="ClienID" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="DateBirth" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Indeks" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Ulitca" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Home" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Kvartira" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ISRPO3Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ISRPO3" EntityType="Self.ISRPO3" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="Template4333._4333_Khisamiev"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Template4333"
+        mc:Ignorable="d"
+        Title="_4333_Khisamiev" Height="450" Width="800">
+    <Grid>
+        <UniformGrid Grid.Row="0" Columns="4">
+            <Button x:Name="BnExport" Click="Export_Click">Экспорт в Excel</Button>
+            <Button x:Name="BnImport" Click="Import_Click">Импорт данных Excel</Button>
+            <Button x:Name="BnExportWord" Click="ExportWord_Click">Экспорт в Word</Button>
+            <Button x:Name="BnImportJSON" Click="ImortJSON_Click">Импорт JSON</Button>
+        </UniformGrid>
+    </Grid>
+</Window>
