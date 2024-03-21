@@ -1,0 +1,22 @@
+﻿<Window x:Class="Template4333._4333_Borodin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Template4333"
+        mc:Ignorable="d"
+        Title="_4333_Borodin" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock>Бородин Егор - возраст: 19</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <Button Height="100" Width="404" Margin="5" Click="ImportClick">Импорт данных</Button>
+                <Button Height="100" Width="304" Margin="5" Click="ImportJSONClick">Импорт JSON данных</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Height="100" Width="404" Margin="5" Click="ExportClick">Экспорт в Excel</Button>
+                <Button Height="100" Width="304" Margin="5" Click="ExportJSONClick">Экспорт в Word</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
