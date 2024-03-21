@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="_4333_Khisamiev" Height="450" Width="800">
     <Grid>
-        <TextBlock>Хисамиев 18 лет</TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="11*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Button x:Name="BnImport" Click="Import_Click">Импорт данных</Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Button x:Name="BnExport" Click="Export_Click" Height="120">Экспорт данных</Button>
+        </Grid>
     </Grid>
 </Window>
