@@ -35,8 +35,6 @@ C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\obj\Debug\Templa
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.CoreCompileInputs.cache
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\obj\Debug\Template4333.exe
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\obj\Debug\Template4333.pdb
-C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\Database.mdf
-C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\Database_log.ldf
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\EntityFramework.dll
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\EPPlus.dll
@@ -60,8 +58,17 @@ C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System.Memory.xml
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\obj\Debug\Template4333_Content.g.cs
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\Newtonsoft.Json.dll
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\Newtonsoft.Json.xml
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.ResolveComReference.cache
 C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\obj\Debug\Template.EADC1948.Up2Date
+C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System.Text.Json.dll
+C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System.ValueTuple.dll
+C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System.Text.Json.xml
+C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\yuric\Downloads\Template4333\Template4333\Template4333\bin\Debug\System.ValueTuple.xml
