@@ -1,43 +1,25 @@
-﻿<Window x:Class="Template4333.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Template4333"
-        mc:Ignorable="d"
-      Title="MainWindow" Height="800" Width="400" MinHeight="800" MinWidth="400">
+﻿<Window x:Class="InteropExcelApp.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:InteropExcelApp"
+mc:Ignorable="d"
+Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-
+            <RowDefinition Height="11*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Button Grid.Row="14" HorizontalAlignment="Center" Content="Показать информацию" Click="Button_Click"/>
+        <UniformGrid Grid.Row="0" Columns="4">
+<Button x:Name="BnExport"
+Click="BnExport_Click">Экспорт в Excel</Button>
+<Button x:Name="BnImport"
+Click="BnImport_Click">Импорт данных</Button>
+            <Button x:Name="BnImportjsonnnn" Click="BnImportjson">Импорт JSON</Button>
+            <Button x:Name="BnImtjson" Click="BnExportWord">экспорт ворд</Button>
+
+        </UniformGrid>
     </Grid>
+
 </Window>
