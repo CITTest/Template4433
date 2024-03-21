@@ -11,17 +11,24 @@ namespace Template4333
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Text.Json.Serialization;
+
     public partial class Table_1
     {
         public int Id { get; set; }
+        [JsonPropertyName("CodeOrder")]
         public string OrderCode { get; set; }
+        [JsonPropertyName("CreateDate")]
         public string DateCreation { get; set; }
+        [JsonPropertyName("CreateTime")]
         public string OrderTime { get; set; }
+        [JsonPropertyName("CodeClient")]
         public string ClientCode { get; set; }
         public string Services { get; set; }
         public string Status { get; set; }
+        [JsonPropertyName("ClosedDate")]
         public string ClosingDate { get; set; }
+        [JsonPropertyName("ProkatTime")]
         public string RentalTime { get; set; }
     }
 }

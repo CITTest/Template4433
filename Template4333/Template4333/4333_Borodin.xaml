@@ -9,8 +9,14 @@
     <Grid>
         <StackPanel Orientation="Vertical">
             <TextBlock>Бородин Егор - возраст: 19</TextBlock>
-            <Button Height="100" Width="404" Margin="5" Click="ImportClick">Импорт данных</Button>
-            <Button Height="100" Width="404" Click="ExportClick">Экспорт в Excel</Button>
+            <StackPanel Orientation="Horizontal">
+                <Button Height="100" Width="404" Margin="5" Click="ImportClick">Импорт данных</Button>
+                <Button Height="100" Width="304" Margin="5" Click="ImportJSONClick">Импорт JSON данных</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Height="100" Width="404" Margin="5" Click="ExportClick">Экспорт в Excel</Button>
+                <Button Height="100" Width="304" Margin="5" Click="ExportJSONClick">Экспорт в Word</Button>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

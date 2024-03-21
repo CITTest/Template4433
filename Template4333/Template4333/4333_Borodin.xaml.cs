@@ -1,20 +1,12 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Excel = Microsoft.Office.Interop.Excel;
+using System.Text.Json;
+using Word = Microsoft.Office.Interop.Word;
 namespace Template4333
 {
     /// <summary>
@@ -161,6 +153,98 @@ namespace Template4333
 
             }
             app.Visible = true;
+        }
+
+        private async void ImportJSONClick(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "JSON files (*.json)|*.json";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string jsonFilePath = openFileDialog.FileName;
+                List<Table_1> ordersData;
+                using (FileStream fs = new FileStream(jsonFilePath, FileMode.Open))
+                {
+                    ordersData = await JsonSerializer.DeserializeAsync<List<Table_1>>(fs);
+                }
+
+                using (isrpoEntities2 isrpoEntities = new isrpoEntities2())
+                {
+                    foreach (var orderData in ordersData)
+                    {
+                        Table_1 newOrder = new Table_1
+                        {
+                            OrderCode = orderData.OrderCode,
+                            DateCreation = orderData.DateCreation,
+                            OrderTime = orderData.OrderTime,
+                            ClientCode = orderData.ClientCode,
+                            Services = orderData.Services,
+                            Status = orderData.Status,
+                            ClosingDate = orderData.ClosingDate,
+                            RentalTime = orderData.RentalTime
+                        };
+                        isrpoEntities.Table_1.Add(newOrder);
+                    }
+                    isrpoEntities.SaveChanges();
+                }
+
+
+            }
+        }
+
+        private void ExportJSONClick(object sender, RoutedEventArgs e)
+        {
+            List<Table_1> allorders;
+            
+            using (isrpoEntities2 usersEntities = new isrpoEntities2())
+            {
+                allorders = usersEntities.Table_1.ToList().OrderBy(s => s.RentalTime).ToList();
+
+            }
+            foreach (var group in allorders.GroupBy(o => o.RentalTime))
+            {
+                var app = new Word.Application();
+                Word.Document document = app.Documents.Add();
+
+                Word.Paragraph headerParagraph = document.Paragraphs.Add();
+                Word.Range headerRange = headerParagraph.Range;
+                headerRange.Text = $"Время проката: {group.Key}";
+                headerParagraph.set_Style("Заголовок 1");
+                headerRange.InsertParagraphAfter();
+
+                Word.Table ordersTable = document.Tables.Add(headerRange, group.Count() + 3, 5);
+                ordersTable.Borders.InsideLineStyle = ordersTable.Borders.OutsideLineStyle = Word.WdLineStyle.wdLineStyleSingle;
+
+                ordersTable.Range.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
+
+                ordersTable.Cell(1, 1).Range.Text = "Id";
+                ordersTable.Cell(1, 2).Range.Text = "Код заказа";
+                ordersTable.Cell(1, 3).Range.Text = "Дата создания";
+                ordersTable.Cell(1, 4).Range.Text = "Код клиента";
+                ordersTable.Cell(1, 5).Range.Text = "Услуги";
+
+                int i = 1;
+                foreach (var order in group)
+                {
+                    i++;
+                    ordersTable.Cell(i, 1).Range.Text = order.Id.ToString();
+                    ordersTable.Cell(i, 2).Range.Text = order.OrderCode;
+                    ordersTable.Cell(i, 3).Range.Text = order.DateCreation.ToString();
+                    ordersTable.Cell(i, 4).Range.Text = order.ClientCode.ToString();
+                    ordersTable.Cell(i, 5).Range.Text = order.Services;
+                }
+                ordersTable.Cell(i + 1, 1).Range.Text = "Дата первого заказа:";
+                var firstOrderDate = group.Take(1).First().DateCreation;
+                ordersTable.Cell(i + 1, 2).Range.Text = firstOrderDate.ToString();
+                ordersTable.Cell(i + 2, 1).Range.Text = "Дата последнего заказа:";
+                var lastOrderDate = group.Take(group.Count()).Last().DateCreation;
+                ordersTable.Cell(i + 2, 2).Range.Text = lastOrderDate.ToString();
+                string fileName = $"C:/Users/Egor/Desktop/ВремяПроката{group.Key}.docx";
+                document.SaveAs2(fileName);
+
+                app.Visible = true;
+            }
         }
     }
 }
