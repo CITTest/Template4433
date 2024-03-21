@@ -4,15 +4,15 @@
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="usersModel.User">
         <MappingFragment StoreEntitySet="Users">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="Code_order" ColumnName="Code_order" />
-          <ScalarProperty Name="Data" ColumnName="Data" />
-          <ScalarProperty Name="Time" ColumnName="Time" />
-          <ScalarProperty Name="Code_client" ColumnName="Code_client" />
-          <ScalarProperty Name="Uslugi" ColumnName="Uslugi" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodeOrder" ColumnName="CodeOrder" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CodeClient" ColumnName="CodeClient" />
+          <ScalarProperty Name="Services" ColumnName="Services" />
           <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="Data_close" ColumnName="Data_close" />
-          <ScalarProperty Name="Time_prokata" ColumnName="Time_prokata" />
+          <ScalarProperty Name="ClosedDate" ColumnName="ClosedDate" />
+          <ScalarProperty Name="ProkatTime" ColumnName="ProkatTime" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

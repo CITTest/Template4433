@@ -7,17 +7,17 @@
       <Schema Namespace="Хранилище usersModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Users">
           <Key>
-            <PropertyRef Name="ID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="ID" Type="int" Nullable="false" />
-          <Property Name="Code_order" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Data" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Time" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Code_client" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Uslugi" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Data_close" Type="nvarchar" MaxLength="50" />
-          <Property Name="Time_prokata" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="CodeOrder" Type="nvarchar" MaxLength="70" />
+          <Property Name="CreateDate" Type="nvarchar" MaxLength="70" Nullable="false" />
+          <Property Name="CreateTime" Type="nvarchar" MaxLength="70" Nullable="false" />
+          <Property Name="CodeClient" Type="nvarchar" MaxLength="70" Nullable="false" />
+          <Property Name="Services" Type="nvarchar" MaxLength="70" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="70" Nullable="false" />
+          <Property Name="ClosedDate" Type="nvarchar" MaxLength="70" Nullable="false" />
+          <Property Name="ProkatTime" Type="nvarchar" MaxLength="70" Nullable="false" />
         </EntityType>
         <EntityContainer Name="Хранилище usersModelContainer">
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
@@ -29,17 +29,17 @@
       <Schema Namespace="usersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="User">
           <Key>
-            <PropertyRef Name="ID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" />
-          <Property Name="Code_order" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Data" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Code_client" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Uslugi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Data_close" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Time_prokata" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="CodeOrder" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateTime" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CodeClient" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Services" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ClosedDate" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProkatTime" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
         <EntityContainer Name="usersEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Users" EntityType="Self.User" />
@@ -53,15 +53,15 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="usersModel.User">
               <MappingFragment StoreEntitySet="Users">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Code_order" ColumnName="Code_order" />
-                <ScalarProperty Name="Data" ColumnName="Data" />
-                <ScalarProperty Name="Time" ColumnName="Time" />
-                <ScalarProperty Name="Code_client" ColumnName="Code_client" />
-                <ScalarProperty Name="Uslugi" ColumnName="Uslugi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CodeOrder" ColumnName="CodeOrder" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="CodeClient" ColumnName="CodeClient" />
+                <ScalarProperty Name="Services" ColumnName="Services" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="Data_close" ColumnName="Data_close" />
-                <ScalarProperty Name="Time_prokata" ColumnName="Time_prokata" />
+                <ScalarProperty Name="ClosedDate" ColumnName="ClosedDate" />
+                <ScalarProperty Name="ProkatTime" ColumnName="ProkatTime" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

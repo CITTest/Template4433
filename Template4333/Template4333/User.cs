@@ -14,14 +14,14 @@ namespace Template4333
     
     public partial class User
     {
-        public int ID { get; set; }
-        public string Code_order { get; set; }
-        public string Data { get; set; }
-        public string Time { get; set; }
-        public string Code_client { get; set; }
-        public string Uslugi { get; set; }
+        public int Id { get; set; }
+        public string CodeOrder { get; set; }
+        public string CreateDate { get; set; }
+        public string CreateTime { get; set; }
+        public string CodeClient { get; set; }
+        public string Services { get; set; }
         public string Status { get; set; }
-        public string Data_close { get; set; }
-        public string Time_prokata { get; set; }
+        public string ClosedDate { get; set; }
+        public string ProkatTime { get; set; }
     }
 }

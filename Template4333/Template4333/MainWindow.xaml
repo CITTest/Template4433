@@ -11,12 +11,15 @@ Title="MainWindow" Height="450" Width="800">
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="11*"></RowDefinition>
         </Grid.RowDefinitions>
-        <UniformGrid Grid.Row="0" Columns="2">
-            <Button x:Name="BnExport"
+        <UniformGrid Grid.Row="0" Columns="4">
+<Button x:Name="BnExport"
 Click="BnExport_Click">Экспорт в Excel</Button>
-            <Button x:Name="BnImport"
+<Button x:Name="BnImport"
 Click="BnImport_Click">Импорт данных</Button>
-        </UniformGrid>
+            <Button x:Name="BnImportjsonnnn" Click="BnImportjson">Импорт JSON</Button>
+            <Button x:Name="BnImtjson" Click="BnExportWord">экспорт ворд</Button>
+
+        </UniformGrid>
     </Grid>
 
 </Window>

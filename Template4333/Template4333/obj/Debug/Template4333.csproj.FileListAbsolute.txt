@@ -60,3 +60,6 @@ C:\Users\RFkzn\Desktop\Template4333\Template4333\Template4333\obj\Debug\Template
 C:\Users\RFkzn\Desktop\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.GenerateResource.cache
 C:\Users\RFkzn\Desktop\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.CoreCompileInputs.cache
 C:\Users\RFkzn\Desktop\Template4333\Template4333\Template4333\obj\Debug\Template4333.csproj.CopyComplete
+C:\Users\RFkzn\Desktop\Template4333\Template4333\Template4333\bin\Debug\Newtonsoft.Json.dll
+C:\Users\RFkzn\Desktop\Template4333\Template4333\Template4333\bin\Debug\Newtonsoft.Json.xml
+C:\Users\RFkzn\Desktop\Template4333\Template4333\Template4333\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
