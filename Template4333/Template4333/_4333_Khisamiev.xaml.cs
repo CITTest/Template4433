@@ -13,6 +13,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Excel = Microsoft.Office.Interop.Excel;
+using Word = Microsoft.Office.Interop.Word;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.IO;
+using System.Security.Cryptography;
+
 namespace Template4333
 {
 	/// <summary>
@@ -114,6 +120,94 @@ namespace Template4333
 			BnExport.Background = new SolidColorBrush(Colors.Green);
 			BnExport.Content = "Экспорт выполнен успешно!";
 			GC.Collect();
+		}
+
+		private void ExportWord_Click(object sender, RoutedEventArgs e)
+		{
+			List<ISRPO3JSON> all;
+
+			using (ISRPO3Entities1 usersEntities = new ISRPO3Entities1())
+			{
+				all = usersEntities.ISRPO3JSON.ToList().OrderBy(s => s.Street).ToList();
+
+			}
+			foreach (var group in all.GroupBy(o => o.Street))
+			{
+				var app = new Word.Application();
+				Word.Document document = app.Documents.Add();
+
+				Word.Paragraph headerParagraph = document.Paragraphs.Add();
+				Word.Range headerRange = headerParagraph.Range;
+				headerRange.Text = $"Улица: {group.Key}";
+				headerParagraph.set_Style("Заголовок 1");
+				headerRange.InsertParagraphAfter();
+
+				Word.Table mytable = document.Tables.Add(headerRange, group.Count() + 1, 3);
+				mytable.Borders.InsideLineStyle = mytable.Borders.OutsideLineStyle = Word.WdLineStyle.wdLineStyleSingle;
+
+				mytable.Range.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
+
+				mytable.Cell(1, 1).Range.Text = "Код клиента";
+				mytable.Cell(1, 2).Range.Text = "ФИО";
+				mytable.Cell(1, 3).Range.Text = "E-mail";
+
+				int i = 1;
+				foreach (var by in group.OrderBy(s => s.FullName))
+				{
+					i++;
+					mytable.Cell(i, 1).Range.Text = by.CodeClient;
+					mytable.Cell(i, 2).Range.Text = by.FullName;
+					mytable.Cell(i, 3).Range.Text = by.E_mail;
+				}
+
+				string fileName = $"C:/Users/Puchindoo/Desktop/ISRPO4/{group.Key}.docx";
+				BnExportWord.Background = new SolidColorBrush(Colors.Green);
+				BnExport.Content = "Экспорт выполнен успешно!";
+				app.Visible = true;
+			}
+		}
+
+		private async void ImortJSON_Click(object sender, RoutedEventArgs e)
+		{
+			OpenFileDialog openFileDialog = new OpenFileDialog();
+			openFileDialog.Filter = "JSON files (*.json)|*.json";
+
+			if (openFileDialog.ShowDialog() == true)
+			{
+				string jsonFilePath = openFileDialog.FileName;
+
+				List<ISRPO3JSON> all;
+
+				using (FileStream fs = new FileStream(jsonFilePath, FileMode.Open))
+				{
+					all = await JsonSerializer.DeserializeAsync<List<ISRPO3JSON>>(fs);
+				}
+
+				using (ISRPO3Entities1 isrpo3Entities = new ISRPO3Entities1())
+				{
+					foreach (var alldata in all)
+					{
+						ISRPO3JSON mytable = new ISRPO3JSON
+						{
+							FullName = alldata.FullName,
+							CodeClient = alldata.CodeClient,
+							BirthDate = alldata.BirthDate,
+							Index = alldata.Index,
+							City = alldata.City,
+							Street = alldata.Street,
+							Home = alldata.Home,
+							Kvartira = alldata.Kvartira,
+							E_mail = alldata.E_mail,
+
+						};
+						isrpo3Entities.ISRPO3JSON.Add(mytable);
+					}
+					isrpo3Entities.SaveChanges();
+					BnImportJSON.Content = "Импорт выполнен успешно!";
+					BnImportJSON.Background = new SolidColorBrush(Colors.Green);
+				}
+
+			}
 		}
 	}
 }

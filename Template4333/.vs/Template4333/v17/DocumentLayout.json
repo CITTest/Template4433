@@ -3,23 +3,41 @@
   "WorkspaceRootPath": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|c:\\users\\puchindoo\\desktop\\isrpo3\\template4333\\template4333\\template4333\\_4333_khisamiev.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\template4333\\_4333_khisamiev.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\_4333_khisamiev.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Puchindoo\\AppData\\Local\\Temp\\.vsdbgsrc\\c22fb8d199518b0d42be713038b338a23d275340bf427b2fee9d7d9011f94825\\_4333_Khisamiev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\template4333\\isrpo3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\isrpo3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\template4333\\model2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\model2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\template4333\\isrpo3json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\isrpo3json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Puchindoo\\Desktop\\\u0418\u043C\u043F\u043E\u0440\u0442-20230311T123022Z-001\\\u0418\u043C\u043F\u043E\u0440\u0442\\3.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\template4333\\model2.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\model2.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\template4333\\_4333_khisamiev.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\_4333_khisamiev.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|c:\\users\\puchindoo\\desktop\\isrpo3\\template4333\\template4333\\template4333\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\template4333\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|c:\\users\\puchindoo\\desktop\\isrpo3\\template4333\\template4333\\template4333\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\template4333\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,7 +52,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,56 +72,114 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_4333_Khisamiev.cs",
+              "DocumentMoniker": "C:\\Users\\Puchindoo\\AppData\\Local\\Temp\\.vsdbgsrc\\c22fb8d199518b0d42be713038b338a23d275340bf427b2fee9d7d9011f94825\\_4333_Khisamiev.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c22fb8d199518b0d42be713038b338a23d275340bf427b2fee9d7d9011f94825\\_4333_Khisamiev.cs",
+              "ToolTip": "C:\\Users\\Puchindoo\\AppData\\Local\\Temp\\.vsdbgsrc\\c22fb8d199518b0d42be713038b338a23d275340bf427b2fee9d7d9011f94825\\_4333_Khisamiev.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c22fb8d199518b0d42be713038b338a23d275340bf427b2fee9d7d9011f94825\\_4333_Khisamiev.cs",
+              "ViewState": "AQIAABYBAAAAAAAAAAAmwDEBAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T09:53:25.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ISRPO3JSON.cs",
+              "DocumentMoniker": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\ISRPO3JSON.cs",
+              "RelativeDocumentMoniker": "Template4333\\ISRPO3JSON.cs",
+              "ToolTip": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\ISRPO3JSON.cs",
+              "RelativeToolTip": "Template4333\\ISRPO3JSON.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T09:19:33.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Model2.cs",
+              "DocumentMoniker": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\Model2.cs",
+              "RelativeDocumentMoniker": "Template4333\\Model2.cs",
+              "ToolTip": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\Model2.cs",
+              "RelativeToolTip": "Template4333\\Model2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T09:19:27.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Model2.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\Model2.edmx",
+              "RelativeDocumentMoniker": "Template4333\\Model2.edmx",
+              "ToolTip": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\Model2.edmx [Diagram1]",
+              "RelativeToolTip": "Template4333\\Model2.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-03-21T09:18:33.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ISRPO3.cs",
+              "DocumentMoniker": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\ISRPO3.cs",
+              "RelativeDocumentMoniker": "Template4333\\ISRPO3.cs",
+              "ToolTip": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\ISRPO3.cs",
+              "RelativeToolTip": "Template4333\\ISRPO3.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAgwCAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T09:05:03.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "3.json",
+              "DocumentMoniker": "C:\\Users\\Puchindoo\\Desktop\\\u0418\u043C\u043F\u043E\u0440\u0442-20230311T123022Z-001\\\u0418\u043C\u043F\u043E\u0440\u0442\\3.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\\u0418\u043C\u043F\u043E\u0440\u0442-20230311T123022Z-001\\\u0418\u043C\u043F\u043E\u0440\u0442\\3.json",
+              "ToolTip": "C:\\Users\\Puchindoo\\Desktop\\\u0418\u043C\u043F\u043E\u0440\u0442-20230311T123022Z-001\\\u0418\u043C\u043F\u043E\u0440\u0442\\3.json",
+              "RelativeToolTip": "..\\..\\..\\\u0418\u043C\u043F\u043E\u0440\u0442-20230311T123022Z-001\\\u0418\u043C\u043F\u043E\u0440\u0442\\3.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-21T08:49:35.617Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "_4333_Khisamiev.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\_4333_Khisamiev.xaml.cs",
               "RelativeDocumentMoniker": "Template4333\\_4333_Khisamiev.xaml.cs",
               "ToolTip": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\_4333_Khisamiev.xaml.cs",
               "RelativeToolTip": "Template4333\\_4333_Khisamiev.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAAA8AAAA",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAmwJoAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T08:39:46.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\Model1.edmx",
-              "RelativeDocumentMoniker": "Template4333\\Model1.edmx",
-              "ToolTip": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "Template4333\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-03-21T08:38:01.997Z",
-              "EditorCaption": " [Diagram1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "_4333_Khisamiev.xaml",
               "DocumentMoniker": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\_4333_Khisamiev.xaml",
               "RelativeDocumentMoniker": "Template4333\\_4333_Khisamiev.xaml",
               "ToolTip": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\_4333_Khisamiev.xaml",
               "RelativeToolTip": "Template4333\\_4333_Khisamiev.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-21T08:37:04.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T08:37:04.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Template4333\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\MainWindow.xaml",
               "RelativeToolTip": "Template4333\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-21T08:37:04.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T08:37:04.329Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Template4333\\MainWindow.xaml.cs",
@@ -111,12 +187,11 @@
               "RelativeToolTip": "Template4333\\MainWindow.xaml.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAIwCUAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T08:37:04.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T08:37:04.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "4333_Kulikova.xaml",
               "DocumentMoniker": "C:\\Users\\Puchindoo\\Desktop\\ISRPO3\\Template4333\\Template4333\\Template4333\\4333_Kulikova.xaml",
               "RelativeDocumentMoniker": "Template4333\\4333_Kulikova.xaml",

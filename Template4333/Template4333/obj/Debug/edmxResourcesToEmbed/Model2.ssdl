@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище ISRPO3Model1" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ISRPO3JSON">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="300" />
+    <Property Name="CodeClient" Type="nvarchar" MaxLength="300" />
+    <Property Name="BirthDate" Type="nvarchar" MaxLength="300" />
+    <Property Name="Index" Type="nvarchar" MaxLength="300" />
+    <Property Name="City" Type="nvarchar" MaxLength="300" />
+    <Property Name="Street" Type="nvarchar" MaxLength="300" />
+    <Property Name="Home" Type="int" />
+    <Property Name="Kvartira" Type="int" />
+    <Property Name="E_mail" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityContainer Name="Хранилище ISRPO3Model1Container">
+    <EntitySet Name="ISRPO3JSON" EntityType="Self.ISRPO3JSON" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -6,7 +6,8 @@
 //     Изменения, вносимые в этот файл вручную, будут перезаписаны при повторном создании кода.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
+using System.Text.Json;
+using System.Text.Json.Serialization;
 namespace Template4333
 {
     using System;
@@ -15,14 +16,22 @@ namespace Template4333
     public partial class ISRPO3
     {
         public int Id { get; set; }
+        
         public string FIO { get; set; }
-        public string ClienID { get; set; }
-        public string DateBirth { get; set; }
-        public string Indeks { get; set; }
-        public string City { get; set; }
-        public string Ulitca { get; set; }
-        public string Home { get; set; }
-        public string Kvartira { get; set; }
-        public string Email { get; set; }
+	
+		public string ClienID { get; set; }
+	
+		public string DateBirth { get; set; }
+		
+		public string Indeks { get; set; }
+		public string City { get; set; }
+		
+		public string Ulitca { get; set; }
+		
+		public string Home { get; set; }
+		public string Kvartira { get; set; }
+		
+
+		public string Email { get; set; }
     }
 }

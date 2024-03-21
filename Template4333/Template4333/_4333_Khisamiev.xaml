@@ -7,15 +7,11 @@
         mc:Ignorable="d"
         Title="_4333_Khisamiev" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="11*"></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <Button x:Name="BnImport" Click="Import_Click">Импорт данных</Button>
-        </Grid>
-        <Grid Grid.Row="1">
-            <Button x:Name="BnExport" Click="Export_Click" Height="120">Экспорт данных</Button>
-        </Grid>
+        <UniformGrid Grid.Row="0" Columns="4">
+            <Button x:Name="BnExport" Click="Export_Click">Экспорт в Excel</Button>
+            <Button x:Name="BnImport" Click="Import_Click">Импорт данных Excel</Button>
+            <Button x:Name="BnExportWord" Click="ExportWord_Click">Экспорт в Word</Button>
+            <Button x:Name="BnImportJSON" Click="ImortJSON_Click">Импорт JSON</Button>
+        </UniformGrid>
     </Grid>
 </Window>
