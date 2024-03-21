@@ -6,7 +6,8 @@
 //     Изменения, вносимые в этот файл вручную, будут перезаписаны при повторном создании кода.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
+using System.Text.Json;
+using System.Text.Json.Serialization;
 namespace Template4333
 {
     using System;
@@ -14,12 +15,19 @@ namespace Template4333
     
     public partial class xls
     {
+        [JsonPropertyName("CodeStaff")]
         public string Код_клиента { get; set; }
+        [JsonPropertyName("Position")]
         public string Должность { get; set; }
+        [JsonPropertyName("FullName")]
         public string ФИО { get; set; }
+        [JsonPropertyName("Log")]
         public string Логин { get; set; }
+        [JsonPropertyName("Password")]
         public string Пароль { get; set; }
+        [JsonPropertyName("LastEnter")]
         public string Последний_вход { get; set; }
+        [JsonPropertyName("TypeEnter")]
         public string Тип_входа { get; set; }
     }
 }
