@@ -13,10 +13,10 @@ namespace Template4333
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ИСРПОEntities2 : DbContext
+    public partial class ИСРПОEntities4 : DbContext
     {
-        public ИСРПОEntities2()
-            : base("name=ИСРПОEntities2")
+        public ИСРПОEntities4()
+            : base("name=ИСРПОEntities4")
         {
         }
     

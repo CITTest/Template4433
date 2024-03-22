@@ -1,9 +1,15 @@
-﻿using Microsoft.Office.Interop.Excel;
+﻿using LanguageExt.TypeClasses;
+using Microsoft.Office.Interop.Excel;
+using Microsoft.Office.Interop.Word;
 using Microsoft.Win32;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,7 +21,13 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static Template4333.MainWindow;
 using Excel = Microsoft.Office.Interop.Excel;
+using Word = Microsoft.Office.Interop.Word;
+using System.Text.Json;
+
+
+
 
 namespace Template4333
 {
@@ -41,64 +53,24 @@ namespace Template4333
             kahraman.Show();
         }
 
-        private void BnImport_Click(object sender, RoutedEventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog()
-            {
-                DefaultExt = ".xls;*.xlsx",
-                Filter = "Excel файлы (Spisok.xlsx)|*.xlsx",
-                Title = "Выберите файл базы данных"
-            };
-            if (!(ofd.ShowDialog() == true))
-                return;
-
-            string[,] list;
-            Excel.Application ObjWorkExcel = new Excel.Application();
-            Excel.Workbook ObjWorkBook = ObjWorkExcel.Workbooks.Open(ofd.FileName);
-            Excel.Worksheet ObjWorkSheet = (Excel.Worksheet)ObjWorkBook.Sheets[1];
-            var lastCell = ObjWorkSheet.Cells.SpecialCells(Excel.XlCellType.xlCellTypeLastCell);
-            int _columns = (int)lastCell.Column;
-            int _rows = (int)lastCell.Row;
-            list = new string[_rows, _columns];
-            for (int i = 0; i < _rows; i++)
-            {
-                for (int j = 0; j < _columns; j++)
-                {
-                    list[i, j] = ObjWorkSheet.Cells[i + 1, j + 1].Text;
-                }
-            }
-            ObjWorkBook.Close(false, Type.Missing, Type.Missing);
-            ObjWorkExcel.Quit();
-            System.Runtime.InteropServices.Marshal.ReleaseComObject(ObjWorkSheet);
-            System.Runtime.InteropServices.Marshal.ReleaseComObject(ObjWorkBook);
-            System.Runtime.InteropServices.Marshal.ReleaseComObject(ObjWorkExcel);
-            ObjWorkSheet = null;
-            ObjWorkBook = null;
-            ObjWorkExcel = null;
-            GC.Collect();
-
-            using (ИСРПОEntities2 иСРПОEntities = new ИСРПОEntities2())
-            {
-                иСРПОEntities.User.RemoveRange(иСРПОEntities.User);
-                иСРПОEntities.SaveChanges();
-            }
+        //public class User
+        //{
+        //    [JsonPropertyName("IdServices")]
+        //    public int ID { get; set; }
+        //    [JsonPropertyName("NameServices")]
+        //    public string Наименование_услуги { get; set; }
+        //    [JsonPropertyName("TypeOfService")]
+        //    public string Вид_услуги { get; set; }
+        //    [JsonPropertyName("Cost")]
+        //    public double Стоимость { get; set; }
+        //}
 
 
-            using (ИСРПОEntities2 иСРПОEntities = new ИСРПОEntities2())
-            {
-                for (int i = 1; i < _rows; i++)
-                {
-                    иСРПОEntities.User.Add(new User() { ID = Convert.ToInt32(list[i,0]), Наименование_услуги = list[i, 1], Вид_услуги = list[i, 2], Стоимость = list[i, 3] });
-                }
-                иСРПОEntities.SaveChanges();
-            }
-
-        }
 
         private void BnExport_Click(object sender, RoutedEventArgs e)
         {
             List<User> all;
-            using (ИСРПОEntities2 иСРПОEntities = new ИСРПОEntities2())
+            using (ИСРПОEntities4 иСРПОEntities = new ИСРПОEntities4())
             {
                 all = иСРПОEntities.User.ToList();
             }
@@ -108,7 +80,7 @@ namespace Template4333
                     new
                     {
                         User = u,
-                        Cost = double.Parse(u.Стоимость)
+                        Cost = u.Стоимость
                     })
                 .OrderBy(u => u.Cost)
                 .Select(u =>
@@ -122,38 +94,89 @@ namespace Template4333
                 })
                 .GroupBy(x => x.Category)
                 .ToList();
-
-            var app = new Excel.Application();
-            Excel.Workbook workbook = app.Workbooks.Add();
-            int startRowIndex = 1;
-
-            foreach (var category in categorizedItems)
-            {
-                Excel.Worksheet worksheet = app.Worksheets.Add();
-                worksheet.Name = category.Key;
-                worksheet.Cells[1][startRowIndex] = "Наименование услуги";
-                worksheet.Cells[2][startRowIndex] = "Стоимость";
-                startRowIndex++;
-
-                foreach (var item in category)
-                {
-                    worksheet.Cells[1][startRowIndex] = item.User.Наименование_услуги;
-                    worksheet.Cells[2][startRowIndex] = item.User.Стоимость;
-                    startRowIndex++;
-                }
-
-                Excel.Range range = worksheet.Range[worksheet.Cells[1, 1], worksheet.Cells[2, startRowIndex - 1]];
-                range.Borders.LineStyle = Excel.XlLineStyle.xlContinuous;
-                range.Columns.AutoFit();
-                startRowIndex = 1;
-            }
-
+            Word.Application app = new Word.Application();
             app.Visible = true;
 
 
+            Word.Document doc = app.Documents.Add();
 
+
+            bool isFirstGroup = true;
+
+            foreach (var PlusGroup in categorizedItems)
+            {
+
+                if (!isFirstGroup)
+                {
+                    Word.Range rng = doc.Content;
+                    rng.Collapse(Word.WdCollapseDirection.wdCollapseEnd);
+                    rng.InsertBreak(Word.WdBreakType.wdPageBreak);
+                }
+
+
+                doc.Content.Text += PlusGroup.Key + "\n";
+                doc.Content.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
+
+
+                foreach (var item in PlusGroup)
+                {
+                    string position = item.User.Наименование_услуги;
+                    int login = item.User.Стоимость;
+
+                    doc.Content.Text += $"Наименование услуги: {position}, Стоимость: {login}\n";
+                }
+
+                isFirstGroup = false;
+
+
+            }
         }
 
-        
+
+        private async void BnImport_Click(object sender, RoutedEventArgs e)
+        {
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "JSON files (*.json)|*.json";
+
+                if (openFileDialog.ShowDialog() == true)
+                {
+                    string jsonFilePath = openFileDialog.FileName;
+
+                    List<User> ordersD;
+
+                    using (FileStream fs = new FileStream(jsonFilePath, FileMode.Open))
+                    {
+                        ordersD = await System.Text.Json.JsonSerializer.DeserializeAsync<List<User>>(fs);
+                    }
+
+                using (ИСРПОEntities4 иСРПОEntities = new ИСРПОEntities4())
+                {
+                    иСРПОEntities.User.RemoveRange(иСРПОEntities.User);
+                    иСРПОEntities.SaveChanges();
+                }
+
+                using (ИСРПОEntities4 usersEntities = new ИСРПОEntities4())
+                    {
+                        foreach (var orderD in ordersD)
+                        {
+                            usersEntities.User.Add(new User()
+                            {
+                                ID = orderD.ID,
+                                Наименование_услуги = orderD.Наименование_услуги,
+                                Вид_услуги = orderD.Вид_услуги,
+                                Стоимость = orderD.Стоимость
+                            });
+                        }
+                        usersEntities.SaveChanges();
+                    }
+
+                    MessageBox.Show("Данные успешно импортированы из JSON файла в таблицу БД.");
+                }
+            
+
+
+        }
     }
+
+   
 }

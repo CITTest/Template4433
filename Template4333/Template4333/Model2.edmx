@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище ИСРПОModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Хранилище ИСРПОModel1" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -22,9 +22,9 @@
           <Property Name="ID" Type="int" Nullable="false" />
           <Property Name="Наименование услуги" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Вид услуги" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Стоимость" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Стоимость" Type="int" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="Хранилище ИСРПОModelContainer">
+        <EntityContainer Name="Хранилище ИСРПОModel1Container">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
@@ -32,7 +32,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="ИСРПОModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="ИСРПОModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -50,9 +50,9 @@
           <Property Name="ID" Type="Int32" Nullable="false" />
           <Property Name="Наименование_услуги" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Вид_услуги" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Стоимость" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Стоимость" Type="Int32" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="ИСРПОEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ИСРПОEntities4" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="User" EntityType="Self.User" />
         </EntityContainer>
@@ -61,9 +61,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище ИСРПОModelContainer" CdmEntityContainer="ИСРПОEntities2">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ИСРПОModel1Container" CdmEntityContainer="ИСРПОEntities4">
           <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="ИСРПОModel.sysdiagrams">
+            <EntityTypeMapping TypeName="ИСРПОModel1.sysdiagrams">
               <MappingFragment StoreEntitySet="sysdiagrams">
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -74,7 +74,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="User">
-            <EntityTypeMapping TypeName="ИСРПОModel.User">
+            <EntityTypeMapping TypeName="ИСРПОModel1.User">
               <MappingFragment StoreEntitySet="User">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Наименование_услуги" ColumnName="Наименование услуги" />

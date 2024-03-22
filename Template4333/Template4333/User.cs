@@ -11,12 +11,17 @@ namespace Template4333
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Text.Json.Serialization;
+
     public partial class User
     {
+        [JsonPropertyName("IdServices")]
         public int ID { get; set; }
+        [JsonPropertyName("NameServices")]
         public string Наименование_услуги { get; set; }
+        [JsonPropertyName("TypeOfService")]
         public string Вид_услуги { get; set; }
-        public string Стоимость { get; set; }
+        [JsonPropertyName("Cost")]
+        public int Стоимость { get; set; }
     }
 }

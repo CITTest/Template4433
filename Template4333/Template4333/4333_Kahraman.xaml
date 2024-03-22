@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="_4333_Kahraman" Height="143" Width="419">
     <Grid>
-        <Label Content="Кахраман, 18 лет" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Кахраман, 18 лет" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Center"/>
     </Grid>
 </Window>
