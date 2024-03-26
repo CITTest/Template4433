@@ -91,3 +91,11 @@ C:\Users\Asus\Source\Repos\Template4333\Template4333\Template4333\obj\Debug\Temp
 C:\Users\Asus\Source\Repos\Template4333\Template4333\Template4333\obj\Debug\Template4333.pdb
 C:\Users\Asus\Source\Repos\Template4333\Template4333\Template4333\bin\Debug\IndexRange.dll
 C:\Users\Asus\Source\Repos\Template4333\Template4333\Template4333\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Asus\source\repos\Template4333\Template4333\Template4333\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Asus\source\repos\Template4333\Template4333\Template4333\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Asus\source\repos\Template4333\Template4333\Template4333\bin\Debug\System.Text.Json.dll
+C:\Users\Asus\source\repos\Template4333\Template4333\Template4333\bin\Debug\System.ValueTuple.dll
+C:\Users\Asus\source\repos\Template4333\Template4333\Template4333\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Asus\source\repos\Template4333\Template4333\Template4333\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Asus\source\repos\Template4333\Template4333\Template4333\bin\Debug\System.Text.Json.xml
+C:\Users\Asus\source\repos\Template4333\Template4333\Template4333\bin\Debug\System.ValueTuple.xml

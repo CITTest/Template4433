@@ -29,6 +29,7 @@ namespace Template4333
         {
             bayazitova4333 win = new bayazitova4333();  
             win.Show();
+            this.Close();
         }
     }
 }

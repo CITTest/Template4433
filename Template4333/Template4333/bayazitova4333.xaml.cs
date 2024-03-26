@@ -1,7 +1,9 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,6 +15,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Excel = Microsoft.Office.Interop.Excel;
+using Word = Microsoft.Office.Interop.Word;
+using System.Text.Json;
+
 
 namespace Template4333
 {
@@ -147,17 +152,113 @@ namespace Template4333
             }
 
             app.Visible = true;
-            string GetCategory(int cost)
-            {
-                if (cost < 350)
-                    return "0-350";
-                else if (cost >= 350 && cost < 800)
-                    return "350-800";
-                else
-                    return "800+";
-            }
 
         }
+
+        private async void BtnImport_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "JSON files (*.json)|*.json";
+
+                if (openFileDialog.ShowDialog() == true)
+                {
+                    string jsonFilePath = openFileDialog.FileName;
+
+                    List<Info> ordersData;
+
+                    using (FileStream fs = new FileStream(jsonFilePath, FileMode.Open))
+                    {
+                        ordersData = await JsonSerializer.DeserializeAsync<List<Info>>(fs);
+                    }
+
+                    using (newdbEntities usersEntities = new newdbEntities())
+                    {
+                        foreach (var orderData in ordersData)
+                        {
+                            Info newOrder = new Info
+                            {
+                               
+                                Name = orderData.Name,
+                                Type_of_service = orderData.Type_of_service,
+                                Id_service = orderData.Id_service,
+                                Cost_rub = orderData.Cost_rub,
+                               
+                            };
+                            usersEntities.Infoes.Add(newOrder);
+                        }
+                        usersEntities.SaveChanges();
+                    }
+
+                    MessageBox.Show("Данные успешно импортированы из JSON файла в таблицу БД", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            catch (Exception ex) { MessageBox.Show("Произошла ошибка при добавлении данных: " + ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error); }
         }
+
+        private void BtnExp_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                List<Info> alldannie;
+                List<Info> dannie1;
+                List<Info> dannie2;
+                List<Info> dannie3;
+
+                using (newdbEntities bay33 = new newdbEntities())
+                {
+                    alldannie = bay33.Infoes.ToList().OrderBy(s => s.Cost_rub).ToList();
+                    dannie1 = bay33.Infoes.OrderBy(s => s.Cost_rub).Where(s => s.Cost_rub <= 250 && s.Cost_rub >= 0).ToList();
+                    dannie2 = bay33.Infoes.OrderBy(s => s.Cost_rub).Where(s => s.Cost_rub <= 800 && s.Cost_rub > 250).ToList();
+                    dannie3 = bay33.Infoes.OrderBy(s => s.Cost_rub).Where(s => s.Cost_rub > 800).ToList();
+                }
+
+                List<List<Info>> allGroups = new List<List<Info>>() { dannie1, dannie2, dannie3 };
+
+                for (int i = 0; i < allGroups.Count; i++)
+                {
+                    var app = new Word.Application();
+                    Word.Document document = app.Documents.Add();
+
+                    Word.Paragraph headerParagraph = document.Paragraphs.Add();
+                    Word.Range headerRange = headerParagraph.Range;
+                    headerRange.Text = $"Группа {i + 1}: Данные по стоимости";
+                    headerParagraph.set_Style("Заголовок 1");
+                    headerRange.InsertParagraphAfter();
+
+                    Word.Table dataTable = document.Tables.Add(headerRange, allGroups[i].Count + 1, 4);
+                    dataTable.Borders.InsideLineStyle = dataTable.Borders.OutsideLineStyle = Word.WdLineStyle.wdLineStyleSingle;
+                    dataTable.Rows[1].Range.Font.Bold = 1;
+                    dataTable.Rows[1].Range.Font.Italic = 1;
+                    dataTable.Range.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
+
+                    dataTable.Cell(1, 1).Range.Text = "ID";
+                    dataTable.Cell(1, 2).Range.Text = "Название услуги";
+                    dataTable.Cell(1, 3).Range.Text = "Вид услуги";
+                    dataTable.Cell(1, 4).Range.Text = "Стоимость";
+
+                    int rowIndex = 1;
+                    foreach (var item in allGroups[i])
+                    {
+                        rowIndex++;
+                        dataTable.Cell(rowIndex, 1).Range.Text = item.ID.ToString();
+                        dataTable.Cell(rowIndex, 2).Range.Text = item.Name;
+                        dataTable.Cell(rowIndex, 3).Range.Text = item.Type_of_service;
+                        dataTable.Cell(rowIndex, 4).Range.Text = item.Cost_rub.ToString();
+                    }
+
+                    string fileName = $"C:/Users/Asus/Desktop/export/outputFileWord_Group{i + 1}.docx";
+                    document.SaveAs2(fileName);
+
+                    app.Visible = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Произошла ошибка при экспорте данных: " + ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+    }
     }
 
