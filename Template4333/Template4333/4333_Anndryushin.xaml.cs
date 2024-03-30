@@ -14,12 +14,10 @@ using System.Windows.Shapes;
 
 namespace Template4333
 {
-    /// <summary>
-    /// Логика взаимодействия для _4333_Kulikova.xaml
-    /// </summary>
-    public partial class _4333_Kulikova : Window
+    
+    public partial class _4333_Andryushin : Window
     {
-        public _4333_Kulikova()
+        public _4333_Andryushin()
         {
             InitializeComponent();
         }

@@ -1,12 +1,13 @@
-﻿<Window x:Class="Template4333.Bayazitova"
+﻿<Window x:Class="Template4333._4333_Andryushin"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Template4333"
         mc:Ignorable="d"
-        Title="Bayazitova" Height="250" Width="250">
+        Title="_4333_Andryushin" Height="100" Width="200">
     <Grid>
-        <Label  HorizontalAlignment="Center" Content="Карина, 19 лет"/>
+        <Label Content="Андрюшин Ратмир" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
