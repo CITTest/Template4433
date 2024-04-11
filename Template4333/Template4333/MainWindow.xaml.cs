@@ -30,5 +30,11 @@ namespace Template4333
             _4333_Kulikova win = new _4333_Kulikova();  
             win.Show();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            _4333_Demidov yarik = new _4333_Demidov();
+            yarik.Show();
+        }
     }
 }
