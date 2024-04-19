@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="4333_Kulikova.xaml">
+    <Page Include="4333_Egorova.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -63,8 +63,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="4333_Kulikova.xaml.cs">
-      <DependentUpon>4333_Kulikova.xaml</DependentUpon>
+    <Compile Include="4333_Egorova.xaml.cs">
+      <DependentUpon>4333_Egorova.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
