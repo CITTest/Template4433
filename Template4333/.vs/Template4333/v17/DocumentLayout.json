@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\Downloads\\ISRPO\\Template4333\\Template4333\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|c:\\users\\hp\\downloads\\isrpo\\template4333\\template4333\\template4333\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|c:\\users\\hp\\downloads\\isrpo\\template4333\\template4333\\template4333\\4333_egorova.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\4333_egorova.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|C:\\Users\\hp\\Downloads\\ISRPO\\Template4333\\Template4333\\template4333\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4271B81A-95C0-4622-92D8-0F9828FDDA95}|Template4333\\Template4333.csproj|solutionrelative:template4333\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "4333_Egorova.xaml",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\ISRPO\\Template4333\\Template4333\\Template4333\\4333_Egorova.xaml",
+              "RelativeDocumentMoniker": "Template4333\\4333_Egorova.xaml",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\ISRPO\\Template4333\\Template4333\\Template4333\\4333_Egorova.xaml",
+              "RelativeToolTip": "Template4333\\4333_Egorova.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-19T16:15:11.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\ISRPO\\Template4333\\Template4333\\Template4333\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Template4333\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\ISRPO\\Template4333\\Template4333\\Template4333\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Template4333\\MainWindow.xaml.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAxwB0AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T16:13:52.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\ISRPO\\Template4333\\Template4333\\Template4333\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Template4333\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\ISRPO\\Template4333\\Template4333\\Template4333\\MainWindow.xaml",
+              "RelativeToolTip": "Template4333\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-19T16:13:52.39Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
