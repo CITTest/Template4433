@@ -39,5 +39,6 @@
 
         </Grid.RowDefinitions>
         <Button Grid.Row="14" HorizontalAlignment="Center" Content="Показать информацию" Click="Button_Click"/>
+        <Button Grid.Row="17" HorizontalAlignment="Center" Content="Показать информацию" Click="Button1_Click"/>
     </Grid>
 </Window>

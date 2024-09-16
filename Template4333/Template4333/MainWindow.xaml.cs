@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Template4333
 {
@@ -27,8 +29,17 @@ namespace Template4333
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _4333_Kulikova win = new _4333_Kulikova();  
+            _4333_Kulikova win = new _4333_Kulikova();
             win.Show();
         }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            _4333_KhokhlovAlexey win = new _4333_KhokhlovAlexey();
+            win.Show();
+        }
+
     }
+    
 }
+

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ISRPO3Model1Container" CdmEntityContainer="ISRPO3Entities2">
+    <EntitySetMapping Name="xls1">
+      <EntityTypeMapping TypeName="ISRPO3Model1.xls1">
+        <MappingFragment StoreEntitySet="xls1">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodeStaff" ColumnName="CodeStaff" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Lg" ColumnName="Lg" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+          <ScalarProperty Name="LastEnter" ColumnName="LastEnter" />
+          <ScalarProperty Name="TypeEnter" ColumnName="TypeEnter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

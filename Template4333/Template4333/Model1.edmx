@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище ISRPO3Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="xls">
+          <Key>
+            <PropertyRef Name="Код_клиента" />
+          </Key>
+          <Property Name="Код_клиента" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Должность" Type="nvarchar" MaxLength="100" />
+          <Property Name="ФИО" Type="nvarchar" MaxLength="100" />
+          <Property Name="Логин" Type="nvarchar" MaxLength="100" />
+          <Property Name="Пароль" Type="nvarchar" MaxLength="100" />
+          <Property Name="Последний_вход" Type="nvarchar" MaxLength="100" />
+          <Property Name="Тип_входа" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="Хранилище ISRPO3ModelContainer">
+          <EntitySet Name="xls" EntityType="Self.xls" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ISRPO3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="xls">
+          <Key>
+            <PropertyRef Name="Код_клиента" />
+          </Key>
+          <Property Name="Код_клиента" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Должность" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ФИО" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Логин" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Пароль" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Последний_вход" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Тип_входа" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="ISRPO3Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="xls" EntityType="Self.xls" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ISRPO3ModelContainer" CdmEntityContainer="ISRPO3Entities">
+          <EntitySetMapping Name="xls">
+            <EntityTypeMapping TypeName="ISRPO3Model.xls">
+              <MappingFragment StoreEntitySet="xls">
+                <ScalarProperty Name="Код_клиента" ColumnName="Код_клиента" />
+                <ScalarProperty Name="Должность" ColumnName="Должность" />
+                <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+                <ScalarProperty Name="Логин" ColumnName="Логин" />
+                <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+                <ScalarProperty Name="Последний_вход" ColumnName="Последний_вход" />
+                <ScalarProperty Name="Тип_входа" ColumnName="Тип_входа" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

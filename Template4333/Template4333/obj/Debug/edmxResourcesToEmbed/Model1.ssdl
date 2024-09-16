@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище ISRPO3Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="xls">
+    <Key>
+      <PropertyRef Name="Код_клиента" />
+    </Key>
+    <Property Name="Код_клиента" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Должность" Type="nvarchar" MaxLength="100" />
+    <Property Name="ФИО" Type="nvarchar" MaxLength="100" />
+    <Property Name="Логин" Type="nvarchar" MaxLength="100" />
+    <Property Name="Пароль" Type="nvarchar" MaxLength="100" />
+    <Property Name="Последний_вход" Type="nvarchar" MaxLength="100" />
+    <Property Name="Тип_входа" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="Хранилище ISRPO3ModelContainer">
+    <EntitySet Name="xls" EntityType="Self.xls" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
